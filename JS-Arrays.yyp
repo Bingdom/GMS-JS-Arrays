@@ -11,6 +11,8 @@
     {"id":{"name":"array_filter","path":"scripts/array_filter/array_filter.yy",},"order":1,},
     {"id":{"name":"array_fill","path":"scripts/array_fill/array_fill.yy",},"order":3,},
     {"id":{"name":"array_every","path":"scripts/array_every/array_every.yy",},"order":11,},
+    {"id":{"name":"array_slice","path":"scripts/array_slice/array_slice.yy",},"order":13,},
+    {"id":{"name":"array_splice","path":"scripts/array_splice/array_splice.yy",},"order":14,},
     {"id":{"name":"array_some","path":"scripts/array_some/array_some.yy",},"order":10,},
     {"id":{"name":"array_flat","path":"scripts/array_flat/array_flat.yy",},"order":8,},
     {"id":{"name":"array_findIndex","path":"scripts/array_findIndex/array_findIndex.yy",},"order":7,},

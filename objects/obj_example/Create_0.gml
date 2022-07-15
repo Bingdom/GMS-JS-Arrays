@@ -70,7 +70,33 @@ show_debug_message(string(array_reduce(reduce_array, function(previousVal, curre
 }, 5)) + ": initialVal=5");
 
 show_debug_message("##############################");
+slice_array = [1, 3, 4, 5, 6, 7, 10, 13];
+show_debug_message("Array slice: " + string(slice_array));
+show_debug_message(string(array_slice(slice_array, 3))		+ ": start: 3");
+show_debug_message(string(array_slice(slice_array, 4, 5))	+ ": start: 4, last: 5");
+show_debug_message(string(array_slice(slice_array, 0, 7))	+ ": start: 0, last: 7");
+show_debug_message(string(array_slice(slice_array, 0, 8))	+ ": start: 0, last: 8");
+show_debug_message(string(array_slice(slice_array, -2))		+ ": start: -2");
+show_debug_message(string(array_slice(slice_array, 2, -1))	+ ": start: 2, last: -1");
+
+show_debug_message("##############################");
 some_array = [4, 6, 9, 11];
 show_debug_message("Array some: " + string(some_array));
 show_debug_message(string(array_some(some_array, function(element) {return element > 10})) + ": > 10");
 show_debug_message(string(array_some(some_array, function(element) {return element > 12})) + ": > 12");
+
+show_debug_message("##############################");
+splice_array = [4, 6, 9, 11];
+show_debug_message("Array splice (delete first, then insert): " + string(splice_array));
+show_debug_message("Removing element at ind: 2. Element removed: " + string(array_splice(splice_array, 2, 1)))
+show_debug_message("Result: " + string(splice_array));
+show_debug_message("Inserting 7, 2 from index 1. Deleting 0: " + string(array_splice(splice_array, 1, 0, 7, 2)));
+show_debug_message("Result: " + string(splice_array));
+show_debug_message("Inserting 3, 5, 3, 3 from index 3. Deleting 1: " + string(array_splice(splice_array, 3, 1, 3, 5, 3, 3)));
+show_debug_message("Result: " + string(splice_array));
+show_debug_message("Deleting all from index 6: " + string(array_splice(splice_array, 6)));
+show_debug_message("Result: " + string(splice_array));
+show_debug_message("Inserting 4 from index -1. Deleting 0: " + string(array_splice(splice_array, -1, 0, 4)));
+show_debug_message("Result: " + string(splice_array));
+show_debug_message("Inserting -5 from index -3. Deleting 1: " + string(array_splice(splice_array, -3, 1, -5)));
+show_debug_message("Result: " + string(splice_array));
