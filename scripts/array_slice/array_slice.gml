@@ -1,4 +1,12 @@
+///@function array_slice(array, [start], [last])
+///@arg {Array<Any*>} array The array to work with.
+///@arg {real} start (Optional) The position to start from. If unspecified, start from the beginning of the array.
+///@arg {real} last (Optional) The position to stop at. If unspecified, stop at the end of the array.
+///@return {Array<Any*>}
+///@desc Return a shallow copy of a portion of the array into a new array, selected from start to end (end is NOT included).
 function array_slice(array, start=0, last=undefined) {
+	//Feather disable GM1035
+	//Feather disable GM1045
 	var size = array_length(array) + 1;
 	var _start;
 	

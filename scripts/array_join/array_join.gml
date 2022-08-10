@@ -1,3 +1,8 @@
+///@function array_join(array, [separator])
+///@arg {Array} array The array to work with.
+///@arg {string} separator (Optional) The separator to put between entries (default: ",")
+///@return {string}
+///@desc Return a string concatenating all elements in an array, separated by the separator.
 function array_join(array, separator=",") {
 	var str;
 	if (is_array(array[0])) {
