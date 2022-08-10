@@ -1,4 +1,4 @@
-<h1 align="center">GMS JS Arrays v1.1.0</h1>
+<h1 align="center">GMS JS Arrays v1.2.0</h1>
 <h3 align="center"><a href="https://twitter.com/BingdomOriginal">@BingdomOriginal</a></h3>
 
 ---
@@ -53,3 +53,6 @@ filtered_items = array_filter(inventory, function(slot) {
 })
 ```
 Will not work. Read <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">this</a> for more details on what a closure is, and how it works.
+
+## Special thanks
+* @dicksonlaw583 - Feather documentation & misc fixes
