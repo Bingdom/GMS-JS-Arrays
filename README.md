@@ -55,4 +55,4 @@ filtered_items = array_filter(inventory, function(slot) {
 Will not work. Read <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">this</a> for more details on what a closure is, and how it works.
 
 ## Special thanks
-* @dicksonlaw583 - Feather documentation & misc fixes
+* @<a href="https://github.com/dicksonlaw583">dicksonlaw583</a> - Feather documentation & misc fixes
